@@ -2,7 +2,7 @@ package la7.cs1120.wmich.edu;
 
 public class Node<E> implements INode<E> {
 	Node<E> next;
-	E dataValue;
+	private E dataValue;
 	
 	/**
 	 * constructor for no next node in parameter

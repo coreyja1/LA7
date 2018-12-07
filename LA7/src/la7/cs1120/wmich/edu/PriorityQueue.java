@@ -40,7 +40,7 @@ public class PriorityQueue<E extends Comparable<E>> {
             previous.next = newNode;
             newNode.next = current;
         }
-
+        System.out.println(newNode.getData());
 	}
 	
 
@@ -56,8 +56,6 @@ public class PriorityQueue<E extends Comparable<E>> {
 		Node<E> temp = front;
 		front = front.next;
 		
-		if (front == null) {
-		}
 		return temp.getData();
 	}
 
@@ -65,8 +63,12 @@ public class PriorityQueue<E extends Comparable<E>> {
  * prints the contents of the queue
  */
 	public void Qprint() {
+		if (isEmpty() == true) {
+			System.out.println("Queue is empty");
+		}
 		Node<E> ref = front;
 		while (ref != null) {
+			System.out.println(ref.getClass());
 			System.out.println(ref.getData());
 			ref = ref.next;
 		}

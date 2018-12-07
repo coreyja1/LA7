@@ -61,7 +61,7 @@ public class Request implements Comparable<Request> {
 			return -1;
 		}
 		// if everything is the same resort to original wins
-		return 0;
+		return 0 ;
 	}
 
 	/** Returns number of years to graduation (0 for seniors, 1 for juniors etc.).
@@ -98,15 +98,6 @@ public class Request implements Comparable<Request> {
 		}
 		gpa = (grade * credits) / credits;
 		return gpa;
-	}
-
-	/**
-	 * toString method
-	 * @return result
-	 */
-	public String toString() {
-		String result = studentName + " successfully registered  " + courseDept + " " + courseNumber;
-		return result;
 	}
 
 	public String getStudentName() {
